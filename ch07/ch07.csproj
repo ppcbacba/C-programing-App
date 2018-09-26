@@ -71,6 +71,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Examples\SampleStyleExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +94,9 @@
     </Compile>
     <Compile Include="Examples\RetangleExample.xaml.cs">
       <DependentUpon>RetangleExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\SampleStyleExample.xaml.cs">
+      <DependentUpon>SampleStyleExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

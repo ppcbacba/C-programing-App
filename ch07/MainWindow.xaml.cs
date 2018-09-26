@@ -73,6 +73,9 @@ namespace ch07
                 case "RectangleExample":
                     w=new Examples.RetangleExample();
                     break;
+                case "SampleStyleExample":
+                    w=new SampleStyleExample();
+                    break;
             }
 
             if (w == null) return;
