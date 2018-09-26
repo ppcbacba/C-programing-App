@@ -56,6 +56,23 @@ namespace ch07
                         MessageBox.Show($"来自对话框:{dw.TextString}");
                     }
                     break;
+
+                case "PageExample1":
+                    w = new Window();
+                    w.Content = new Pages.Page1();
+                    break;
+
+                case "PageExample2":
+                    w = new System.Windows.Navigation.NavigationWindow();
+                    w.Content = new Pages.Page2();
+                    break;
+
+                case "PageExample3":
+                    w = new Pages.FrameExample();
+                    break;
+                case "RectangleExample":
+                    w=new Examples.RetangleExample();
+                    break;
             }
 
             if (w == null) return;

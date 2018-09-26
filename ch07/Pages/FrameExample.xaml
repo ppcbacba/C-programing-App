@@ -1,0 +1,21 @@
+﻿<Window x:Class="ch07.Pages.FrameExample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ch07.Pages"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="FrameExample" Height="648">
+    <StackPanel Orientation="Vertical" Margin="0,0,0,-165">
+
+        <TextBlock TextWrapping="Wrap" Text="使用Frame承载Page" />
+
+
+        <Frame Name="frame1" NavigationUIVisibility="Visible" Source="Page3.xaml" Background="#FF6C6666" Margin="20" Height="421.24" />
+        <Button x:Name="buttonOK" Content="OK" Width="100" Margin="346,20" Click="buttonOK_Click"/>
+
+
+    </StackPanel>
+
+
+</Window>

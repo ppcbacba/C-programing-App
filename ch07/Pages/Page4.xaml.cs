@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ch07.PageExamples
+namespace ch07.Pages
 {
     /// <summary>
-    /// Page1.xaml 的交互逻辑
+    /// Page4.xaml 的交互逻辑
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page4 : Page
     {
-        public Page1()
+        public Page4()
         {
             InitializeComponent();
         }
