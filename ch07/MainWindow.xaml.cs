@@ -54,6 +54,7 @@ namespace ch07
                     if (result == true)
                     {
                         MessageBox.Show($"来自对话框:{dw.TextString}");
+                        //tray
                     }
                     break;
 
@@ -63,15 +64,17 @@ namespace ch07
                     break;
 
                 case "PageExample2":
-                    w = new System.Windows.Navigation.NavigationWindow();
-                    w.Content = new Pages.Page2();
+                    w = new System.Windows.Navigation.NavigationWindow
+                    {
+                        Content = new Pages.Page2()
+                    };
                     break;
 
                 case "PageExample3":
                     w = new Pages.FrameExample();
                     break;
                 case "RectangleExample":
-                    w=new Examples.RetangleExample();
+                    w=new RetangleExample();
                     break;
                 case "SampleStyleExample":
                     w=new SampleStyleExample();
