@@ -79,6 +79,9 @@ namespace ch07
                 case "SampleStyleExample":
                     w=new SampleStyleExample();
                     break;
+                case "MouseEventExample":
+                    w=new MouseEventExample();
+                    break;
             }
 
             if (w == null) return;

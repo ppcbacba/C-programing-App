@@ -67,6 +67,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Examples\MouseEventExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Examples\RetangleExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,6 +95,9 @@
     </Compile>
     <Compile Include="Examples\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\MouseEventExample.xaml.cs">
+      <DependentUpon>MouseEventExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Examples\RetangleExample.xaml.cs">
       <DependentUpon>RetangleExample.xaml</DependentUpon>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="ch07.Examples.MouseEventExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ch07.Examples"
+        mc:Ignorable="d"
+        Title="MouseEventExample" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="136*"/>
+            <ColumnDefinition Width="135*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="Wrap" Text="移动鼠标到左侧的三个矩形内以及右侧矩形框内观察结果" Grid.ColumnSpan="2" FontSize="14" VerticalAlignment="Center"/>
+        <Canvas x:Name="ParentCanvas" Grid.Row="1" Margin="5" Background="#FFFBEFD8" MouseMove="ParentCanvas_MouseMove">
+            <Rectangle x:Name="RectA" Fill="PowderBlue" Height="100" Canvas.Left="25" Stroke="Black" Canvas.Top="24" Width="100" MouseEnter="Rect_MouseEnter" MouseLeave="Rect_MouseLeave"/>
+            <Rectangle x:Name="RectB" Fill="Gold" Height="100" Canvas.Left="109" Stroke="Black" Canvas.Top="59" Width="100" MouseEnter="Rect_MouseEnter" MouseLeave="Rect_MouseLeave"/>
+        </Canvas>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Grid.Row="1" Background="#FFFDFCDC" MouseEnter="Border_MouseEnter_1" MouseMove="Border_MouseMove_1" Cursor="ScrollAll">
+            <Ellipse x:Name="ellipse" Fill="Gold" Stroke="Black" Cursor="Cross" OpacityMask="#FFF4F4F5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="28" MouseWheel="ellipse_MouseWheel"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="2" Grid.ColumnSpan="2" Background="#FFE8FBC7">
+            <TextBlock x:Name="statusTextBlock" TextWrapping="Wrap" Text="statusTextBlock" VerticalAlignment="Center"/>
+        </Border>
+    </Grid>
+
+</Window>
